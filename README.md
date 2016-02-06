@@ -7,3 +7,6 @@
     <img src='https://badges.gitter.im/Join%20Chat.svg' alt='Gitter Chat' />
   </a>
 </p>
+
+
+[![Join the chat at https://gitter.im/GantryBot/GantryBot-core](https://badges.gitter.im/GantryBot/GantryBot-core.svg)](https://gitter.im/GantryBot/GantryBot-core?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
