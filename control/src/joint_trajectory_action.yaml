@@ -1,0 +1,7 @@
+joint_trajectory_action_node:
+    joints:
+        -x_joint
+    constraints:
+        goal_time : 15
+        x_block_joint:
+            goal : 15

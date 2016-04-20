@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot name="fcm">
+      <link name="base_link">
+        <visual>
+          <origin xyz="4.5 0 0" rpy="0 0 0" />
+          <geometry>
+            <box size="9 .2 .2" />
+          </geometry>
+          <material name="blue">
+            <color rgba="0 0 .8 1"/>
+          </material>
+        </visual>
+      </link>
+
+      <link name="x-carriage">
+        <visual>
+          <origin xyz=".2 0 0" rpy="0 0 0" />
+          <geometry>
+            <box size=".4 .4 .4" />
+          </geometry>
+          <origin  xyz="0.1 0 0"/>
+          <material name="Gray">
+            <color rgba=".7 .7 .7 1"/>
+          </material>
+        </visual>
+      </link>
+
+      <joint name="x_joint" type="prismatic">
+        <parent link="base_link"/>
+        <child link="x-carriage"/>
+        <limit effort="1000.0" lower="0" upper="8.6" velocity="0.5"/>
+        <origin  xyz="0 0 0"/>
+      </joint>
+
+</robot>

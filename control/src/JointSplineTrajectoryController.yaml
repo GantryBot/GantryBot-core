@@ -1,0 +1,23 @@
+fcm:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers ---------------------------------------
+  x_position_controller:
+    type: effort_controllers/JointPositionController
+    joint:
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  joint2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: joint2
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+
+
+linear_rail_controller:
+    type: JointSplineTrajectoryController
+    joints:
+            -x_joint
+    gains:
+        x_block_joint : {p : 100.0 , d : 30}

@@ -1,0 +1,24 @@
+<launch>
+
+    <!-- load urdf for joint state publisger -->
+    <param name="robot_description" command="cat '$(find fcm)/urdf/fcm.urdf' " />
+    <!-- Load joint controller configurations from YAML file to parameter server -->
+    <rosparam file="$(find fcm_control)/src/controllers.yaml" command="load" />
+
+
+    <!-- run the service server -->
+    <node name="x_joint_cmd_server"  pkg="fcm_control" type="x_joint_cmd_server"
+        ns="/fcm" output="screen"/>
+
+    <!-- load the controller -->
+    <node name="control_manager" pkg="fcm_control" type="control_manager" respawn="false"
+        output="screen" ns="/fcm" args="joint_state_controller x_position_controller" />
+
+    <!-- load the service server to get the joint position command for x axis -->
+    <!-- <node name="x_joint_cmd_server" pkg="fcm_control" type="x_joint_cmd_server" respawn="false" -->
+        <!-- output="screen" ns="ardunio" args="" /> -->
+
+
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+      output="screen" ns="/fcm" args="joint_state_controller x_position_controller" />
+</launch>
