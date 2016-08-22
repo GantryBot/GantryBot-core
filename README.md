@@ -7,3 +7,7 @@
     <img src='https://badges.gitter.im/Join%20Chat.svg' alt='Gitter Chat' />
   </a>
 </p>
+
+<p align="center"> 
+  <a href='https://docs.google.com/spreadsheets/d/1vCUmwx6uWVu4fmCTzdO-bj_zkyh_DBMIRnOWzgxt28A/edit?usp=sharing'>Scedule</a>
+</p>
