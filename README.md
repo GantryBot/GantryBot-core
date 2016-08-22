@@ -9,5 +9,5 @@
 </p>
 
 <p align="center"> 
-  <a href='https://docs.google.com/spreadsheets/d/1vCUmwx6uWVu4fmCTzdO-bj_zkyh_DBMIRnOWzgxt28A/edit?usp=sharing'>Scedule</a>
+  <a href='https://docs.google.com/spreadsheets/d/1vCUmwx6uWVu4fmCTzdO-bj_zkyh_DBMIRnOWzgxt28A/edit?usp=sharing'>Schedule</a>
 </p>
